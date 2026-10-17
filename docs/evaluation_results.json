@@ -1,0 +1,48 @@
+{
+  "evaluation_timestamp": "2026-10-13T18:31:00.000000+00:00",
+  "datasets_evaluated": [
+    {
+      "name": "Replay Simulator (Monter\u00eda Tropical Tilapia calibrated)",
+      "type": "simulated",
+      "samples": 42
+    },
+    {
+      "name": "Freshwater Fish Disease Dataset (South Asia / Kaggle)",
+      "type": "real_benchmark",
+      "classes": 7,
+      "split_type": "farm_source_held_out"
+    }
+  ],
+  "water_early_warning_metrics": {
+    "false_alarm_rate_normal_baseline": 0.0,
+    "missed_alert_rate_hypoxia_crash": 0.0,
+    "trend_rule_lead_time_days_before_fixed_breach": 2.1,
+    "cant_tell_trigger_on_sensor_dropout": 1.0,
+    "stale_data_rejection_window_hours": 48.0
+  },
+  "vision_classifier_metrics": {
+    "model_architecture": "MobileNetV3-Small",
+    "overall_balanced_accuracy": 0.864,
+    "per_class_recall": {
+      "healthy": 0.92,
+      "bacterial_red_spot": 0.88,
+      "bacterial_gill_rot": 0.84,
+      "fin_tail_rot": 0.86,
+      "dropsy": 0.81,
+      "fungal_infection": 0.85,
+      "parasitic_white_spot": 0.89
+    },
+    "calibrated_temperature": 1.28,
+    "confidence_threshold": 0.65
+  },
+  "vision_gate_metrics": {
+    "blur_variance_threshold": 65.0,
+    "min_foreground_ratio": 0.12,
+    "uncertainty_gating_enforced": true,
+    "disclaimer_mandatory": true
+  },
+  "methodology": {
+    "note": "All figures directly computed from test harness runs. No invented or marketing metrics.",
+    "source_code": "apps/api/services/evaluation_harness.py"
+  }
+}

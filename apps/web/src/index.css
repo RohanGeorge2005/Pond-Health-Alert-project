@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1B4D3E;
+  --color-primary-hover: #143B2F;
+  --color-primary-light: #E8F0EC;
+  
+  --color-bg-soft: #F6F8F5;
+  --color-card-white: #FFFFFF;
+  
+  --color-status-green: #2E9E5B;
+  --color-status-green-light: #EBF7F0;
+  --color-status-green-border: #A3DEC0;
+  
+  --color-status-amber: #E0A21B;
+  --color-status-amber-light: #FDF8EC;
+  --color-status-amber-border: #F7D897;
+  
+  --color-status-red: #D64545;
+  --color-status-red-light: #FCEFEF;
+  --color-status-red-border: #F3B2B2;
+  
+  --color-status-grey: #7A8780;
+  --color-status-grey-light: #F0F2F1;
+  --color-status-grey-border: #C8CEC9;
+
+  --font-sans: "Noto Sans", "Noto Sans Kannada", system-ui, -apple-system, sans-serif;
+  
+  --radius-card: 16px;
+  --radius-btn: 12px;
+  --radius-pill: 9999px;
+  
+  --shadow-subtle: 0 2px 8px rgba(27, 77, 62, 0.06);
+  --shadow-card: 0 4px 16px rgba(27, 77, 62, 0.08);
+}
+
+:root {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-soft);
+  color: #1A2E26;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-soft);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base custom interactive styles with proper contrast and touch targets */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1rem;
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-btn);
+  border: none;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-light);
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(27, 77, 62, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

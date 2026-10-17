@@ -1,0 +1,129 @@
+# Pond Health Alert - Water Quality Bands Configuration
+# Sources: FAO Fisheries and Aquaculture Technical Paper 492 / ICAR-CIFA Pond Management Guidelines
+# All values are subject to expert field verification for coastal Karnataka brackish/freshwater systems.
+
+version: "1.0"
+metadata:
+  target_region: "Coastal Karnataka, India"
+  species_scope: ["Carp", "Tilapia", "Freshwater Prawn"]
+  stale_data_threshold_hours: 48
+  sustained_deviation_window_minutes: 10
+  trend_window_days: 7
+  trend_projection_days: 3
+
+parameters:
+  temperature:
+    unit: "deg_C"
+    physical_limits:
+      min: 0.0
+      max: 50.0
+    bands:
+      green:
+        min: 25.0
+        max: 30.0
+      amber:
+        ranges:
+          - { min: 22.0, max: 25.0 }
+          - { min: 30.0, max: 33.0 }
+      red:
+        description: "< 22.0 or > 33.0"
+    source: "FAO Fisheries Technical Paper 492: Better management practices for carp aquaculture"
+    reviewed: false
+    weight: 1.0
+
+  ph:
+    unit: "pH"
+    physical_limits:
+      min: 0.0
+      max: 14.0
+    bands:
+      green:
+        min: 6.5
+        max: 8.5
+      amber:
+        ranges:
+          - { min: 6.0, max: 6.5 }
+          - { min: 8.5, max: 9.0 }
+      red:
+        description: "< 6.0 or > 9.0"
+    source: "ICAR-CIFA Water Quality Management in Aquaculture"
+    reviewed: false
+    weight: 1.5
+
+  dissolved_oxygen:
+    unit: "mg/L"
+    physical_limits:
+      min: 0.0
+      max: 25.0
+    bands:
+      green:
+        min: 5.0
+        max: 25.0
+      amber:
+        min: 3.0
+        max: 5.0
+      red:
+        min: 0.0
+        max: 3.0
+    source: "FAO Fisheries circular no. 886: Dissolved oxygen limits in tropical ponds"
+    reviewed: false
+    weight: 2.5 # Weighted highest for mortality risk
+
+  turbidity:
+    unit: "NTU"
+    physical_limits:
+      min: 0.0
+      max: 1000.0
+    bands:
+      green:
+        min: 0.0
+        max: 25.0
+      amber:
+        min: 25.0
+        max: 50.0
+      red:
+        min: 50.0
+        max: 1000.0
+    source: "ICAR Aquaculture Field Manual (Secchi disk correlation ~ 25-40 cm)"
+    reviewed: false
+    weight: 1.0
+
+  conductivity:
+    unit: "uS/cm"
+    physical_limits:
+      min: 0.0
+      max: 10000.0
+    bands:
+      green:
+        min: 200.0
+        max: 500.0
+      amber:
+        min: 500.0
+        max: 1000.0
+      red:
+        description: "< 100.0 or > 1000.0"
+        ranges:
+          - { min: 0.0, max: 100.0 }
+          - { min: 1000.0, max: 10000.0 }
+    source: "Boyd, C.E. (1998) Water Quality for Pond Aquaculture"
+    reviewed: false
+    weight: 1.0
+
+  ammonia:
+    unit: "mg/L"
+    physical_limits:
+      min: 0.0
+      max: 10.0
+    bands:
+      green:
+        min: 0.0
+        max: 0.05
+      amber:
+        min: 0.05
+        max: 0.2
+      red:
+        min: 0.2
+        max: 10.0
+    source: "Species-specific band: Unionized ammonia (NH3-N) FAO guidance (TODO: expert field validation)"
+    reviewed: false
+    weight: 2.5 # Weighted highest

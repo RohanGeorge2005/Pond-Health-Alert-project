@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "region": "Coastal Karnataka",
+    "reviewed_by_native_speaker": false,
+    "needs_review": true,
+    "note": "Kannada alert templates based on ICAR-CIFA extension advisory guidelines. Pending sign-off by Mangalore / Udupi Fisheries Extension Officer."
+  },
+  "templates": {
+    "CRITICAL_LOW_DO": {
+      "en": "CRITICAL: Oxygen crash in {pond_name}! DO dropped to {dissolved_oxygen} mg/L. Aerate now to prevent fish kill.",
+      "kn": "ತುರ್ತು ಎಚ್ಚರಿಕೆ: {pond_name} ಕೊಳದಲ್ಲಿ ಆಮ್ಲಜನಕ ಕುಸಿದಿದೆ! DO ಪ್ರಮಾಣ {dissolved_oxygen} mg/L ಆಗಿದೆ. ತಕ್ಷಣ ಏರೇಟರ್ ಚಾಲೂ ಮಾಡಿ.",
+      "priority": "HIGH",
+      "action_en": "Start all aerators immediately and halt feeding.",
+      "action_kn": "ತಕ್ಷಣ ಎಲ್ಲಾ ಏರೇಟರ್‌ಗಳನ್ನು ಚಾಲೂ ಮಾಡಿ ಮತ್ತು ಆಹಾರ ನೀಡುವುದನ್ನು ನಿಲ್ಲಿಸಿ."
+    },
+    "LOW_DO": {
+      "en": "WARNING: Oxygen is low in {pond_name} at {dissolved_oxygen} mg/L. Check aerators.",
+      "kn": "ಎಚ್ಚರಿಕೆ: {pond_name} ಕೊಳದಲ್ಲಿ ಆಮ್ಲಜನಕ ಕಡಿಮೆಯಾಗಿದೆ ({dissolved_oxygen} mg/L). ಏರೇಟರ್ ಪರೀಕ್ಷಿಸಿ.",
+      "priority": "MEDIUM",
+      "action_en": "Turn on paddle aerators during early morning hours.",
+      "action_kn": "ಮುಂಜಾನೆಯ ಸಮಯದಲ್ಲಿ ಪ್ಯಾಡಲ್ ಏರೇಟರ್‌ಗಳನ್ನು ಚಾಲೂ ಮಾಡಿ."
+    },
+    "FALLING_DO_TREND": {
+      "en": "TREND ALERT: Oxygen in {pond_name} is dropping steadily ({slope} mg/L/day). Likely breach within {days} days.",
+      "kn": "ಟ್ರೆಂಡ್ ಎಚ್ಚರಿಕೆ: {pond_name} ಕೊಳದಲ್ಲಿ ಆಮ್ಲಜನಕ ದಿನೇ ದಿನೇ ಇಳಿಯುತ್ತಿದೆ ({slope} mg/L/ದಿನಕ್ಕೆ). ಮುಂದಿನ {days} ದಿನಗಳಲ್ಲಿ ಅಪಾಯದ ಮಟ್ಟ ತಲುಪಬಹುದು.",
+      "priority": "MEDIUM",
+      "action_en": "Prepare backup aeration before DO falls below safe threshold.",
+      "action_kn": "ಆಮ್ಲಜನಕ ಅಪಾಯದ ಮಟ್ಟ ತಲುಪುವ ಮೊದಲೇ ಹೆಚ್ಚುವರಿ ಏರೇಶನ್ ಸಿದ್ಧಪಡಿಸಿ."
+    },
+    "CRITICAL_HIGH_AMMONIA": {
+      "en": "CRITICAL: Toxic ammonia in {pond_name} ({ammonia} mg/L). Cease feeding and do 20% water exchange.",
+      "kn": "ತುರ್ತು ಎಚ್ಚರಿಕೆ: {pond_name} ಕೊಳದಲ್ಲಿ ಅಮೋನಿಯಾ ವಿಷಕಾರಿ ಮಟ್ಟದಲ್ಲಿದೆ ({ammonia} mg/L). ಆಹಾರ ನಿಲ್ಲಿಸಿ, 20% ನೀರನ್ನು ಬದಲಾಯಿಸಿ.",
+      "priority": "HIGH",
+      "action_en": "Stop feed, exchange 20% bottom water if salinity matches.",
+      "action_kn": "ಆಹಾರ ನಿಲ್ಲಿಸಿ ಮತ್ತು 20% ತಳದ ನೀರನ್ನು ಬದಲಾಯಿಸಿ."
+    },
+    "HIGH_FISH_MORTALITY": {
+      "en": "DANGER: Sudden mortality observed in {pond_name} ({dead_fish_count} dead fish reported). Possible pathogen or hypoxia.",
+      "kn": "ಅಪಾಯ: {pond_name} ಕೊಳದಲ್ಲಿ ಮೀನು ಸಾವು ಸಂಭವಿಸಿದೆ ({dead_fish_count} ಮೀನುಗಳು ಸತ್ತಿವೆ). ತಕ್ಷಣ ಅಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+      "priority": "HIGH",
+      "action_en": "Remove dead fish immediately, bury with lime, contact fisheries officer.",
+      "action_kn": "ಸತ್ತ ಮೀನುಗಳನ್ನು ತಕ್ಷಣ ಹೊರತೆಗೆದು ಸುಣ್ಣ ಹಾಕಿ ಹೂತುಹಾಕಿ, ಅಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ."
+    },
+    "CONFIRMED_DISEASE_SYMPTOMS": {
+      "en": "DISEASE GUIDE: Symptoms of {disease_name_en} suspected from photo (advisory only).",
+      "kn": "ರೋಗದ ಲಕ್ಷಣ: ಫೋಟೋದಲ್ಲಿ {disease_name_kn} ರೋಗದ ಲಕ್ಷಣಗಳು ಕಂಡುಬಂದಿವೆ (ಮಾರ್ಗದರ್ಶಿ ಮಾತ್ರ).",
+      "priority": "HIGH",
+      "action_en": "Quarantine affected pond and confirm with veterinary officer before chemical application.",
+      "action_kn": "ಔಷಧಿ ಹಾಕುವ ಮುನ್ನ ಮೀನುಗಾರಿಕಾ ಅಧಿಕಾರಿಯೊಂದಿಗೆ ಪರೀಕ್ಷಿಸಿ ದೃಢೀಕರಿಸಿ."
+    },
+    "OPTIMAL_WATER_QUALITY": {
+      "en": "All parameters normal for {pond_name}. Conditions are healthy.",
+      "kn": "{pond_name} ಕೊಳದ ಎಲ್ಲಾ ಗುಣಮಟ್ಟದ ಮಾಪನಗಳು ಸಾಮಾನ್ಯವಾಗಿವೆ. ಕೊಳದ ಸ್ಥಿತಿ ಉತ್ತಮವಾಗಿದೆ.",
+      "priority": "LOW",
+      "action_en": "Continue routine feeding and checks.",
+      "action_kn": "ಸಾಮಾನ್ಯ ಆಹಾರ ಮತ್ತು ನಿಯಮಿತ ತಪಾಸಣೆಯನ್ನು ಮುಂದುವರಿಸಿ."
+    },
+    "CANT_TELL": {
+      "en": "CANNOT DETERMINE STATUS for {pond_name}: {reason_en}. Please provide fresh test-kit readings.",
+      "kn": "{pond_name} ಕೊಳದ ಸ್ಥಿತಿಯನ್ನು ನಿರ್ಣಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ: {reason_kn}. ದಯವಿಟ್ಟು ಹೊಸ ಪರೀಕ್ಷಾ ವಿವರಗಳನ್ನು ನೀಡಿ.",
+      "priority": "MEDIUM",
+      "action_en": "Submit fresh manual test-kit reading right away.",
+      "action_kn": "ತಕ್ಷಣ ತಾಜಾ ನೀರಿನ ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶಗಳನ್ನು ದಾಖಲಿಸಿ."
+    }
+  }
+}
