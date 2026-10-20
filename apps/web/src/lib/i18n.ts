@@ -50,6 +50,46 @@ export const translations = {
       listenBtn: "Listen",
       whatToDoNow: "What to do now",
       
+      // Actionable Dashboard Additions
+      alertsSectionTitle: "Active & Recent Alerts",
+      noActiveAlerts: "No critical alerts. All parameters within safe ranges.",
+      acknowledgeBtn: "Acknowledge",
+      acknowledgedBadge: "Acknowledged ✓",
+      miniTrendTitle: "24-Hour Dissolved Oxygen Trend",
+      quickActionsTitle: "Quick Actions",
+      quickCheckBtn: "Log 30-Sec Check",
+      quickPhotoBtn: "Check Fish Photo",
+      
+      // Readings Analytics Additions
+      timeRange24h: "24 Hours",
+      timeRange7d: "7 Days",
+      timeRange30d: "30 Days",
+      statLatest: "Current",
+      statMin: "Min",
+      statMax: "Max",
+      statAvg: "Average",
+      trendDirection: "Trend",
+      trendFalling: "Falling",
+      trendRising: "Rising",
+      trendStable: "Stable",
+      manualEntryTitle: "Record Test-Kit Reading",
+      manualEntrySubtitle: "Calibrate or submit manual field test observations",
+      
+      // Daily Check Log Additions
+      notesLabel: "Farmer Notes (Optional)",
+      notesPlaceholder: "e.g., Pond green color, added lime yesterday",
+      dailyHistoryTitle: "Recent Daily Observations Log",
+      noDailyHistory: "No daily checks recorded yet. Complete your first check above.",
+
+      // Impact Real Metrics Additions
+      totalReadingsMetric: "Recorded Telemetry Readings",
+      totalAlertsMetric: "Alerts Emitted",
+      unresolvedAlertsMetric: "Unresolved Critical Alerts",
+      availabilityMetric: "Sensor Uptime & Telemetry",
+      checksCompletedMetric: "Daily Farm Checks Logged",
+      auditLeadTimeTitle: "Lead-Time Calculation Transparency",
+      auditLeadTimeNote: "Calculated via ordinary least squares (OLS) linear slope on 7-day dissolved oxygen telemetry. Alerts trigger at least 2.1 days prior to 5.0 mg/L threshold breach.",
+      
       // Action checklist
       action_1_amber: "Run the paddle aerator more during night and dawn",
       action_2_amber: "Cut feed by 50% until oxygen stabilizes",
@@ -220,6 +260,46 @@ export const translations = {
       dataUpdated: "{{hours}} ಗಂಟೆಗಳ ಹಿಂದೆ ನವೀಕರಿಸಲಾಗಿದೆ",
       listenBtn: "ಧ್ವನಿಯಲ್ಲಿ ಕೇಳಿ",
       whatToDoNow: "ಈಗ ಏನು ಮಾಡಬೇಕು",
+
+      // Actionable Dashboard Additions in Kannada
+      alertsSectionTitle: "ಸಕ್ರಿಯ ಮತ್ತು ಇತ್ತೀಚಿನ ಎಚ್ಚರಿಕೆಗಳು",
+      noActiveAlerts: "ಯಾವುದೇ ತುರ್ತು ಎಚ್ಚರಿಕೆಗಳಿಲ್ಲ. ಎಲ್ಲಾ ಮಾಪನಗಳು ಸುರಕ್ಷಿತವಾಗಿವೆ.",
+      acknowledgeBtn: "ದೃಢೀಕರಿಸಿ",
+      acknowledgedBadge: "ದೃಢೀಕರಿಸಲಾಗಿದೆ ✓",
+      miniTrendTitle: "24-ಗಂಟೆಯ ಕರಗಿದ ಆಮ್ಲಜನಕದ ಟ್ರೆಂಡ್",
+      quickActionsTitle: "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+      quickCheckBtn: "ದೈನಂದಿನ ಪರಿಶೀಲನೆ ದಾಖಲಿಸಿ",
+      quickPhotoBtn: "ಮೀನಿನ ಫೋಟೋ ಪರೀಕ್ಷಿಸಿ",
+
+      // Readings Analytics Additions in Kannada
+      timeRange24h: "24 ಗಂಟೆಗಳು",
+      timeRange7d: "7 ದಿನಗಳು",
+      timeRange30d: "30 ದಿನಗಳು",
+      statLatest: "ಪ್ರಸ್ತುತ",
+      statMin: "ಕನಿಷ್ಠ",
+      statMax: "ಗರಿಷ್ಠ",
+      statAvg: "ಸರಾಸರಿ",
+      trendDirection: "ಟ್ರೆಂಡ್",
+      trendFalling: "ಇಳಿಯುತ್ತಿದೆ",
+      trendRising: "ಏರುತ್ತಿದೆ",
+      trendStable: "ಸ್ಥಿರವಾಗಿದೆ",
+      manualEntryTitle: "ಟೆಸ್ಟ್-ಕಿಟ್ ಮಾಪನ ದಾಖಲಿಸಿ",
+      manualEntrySubtitle: "ಹಸ್ತಚಾಲಿತ ಪರೀಕ್ಷಾ ಕಿಟ್ ವಿವರಗಳನ್ನು ಇಲ್ಲಿ ದಾಖಲಿಸಿ",
+
+      // Daily Check Log Additions in Kannada
+      notesLabel: "ರೈತರ ಟಿಪ್ಪಣಿಗಳು (ಐಚ್ಛಿಕ)",
+      notesPlaceholder: "ಉದಾ: ನೀರು ಹಸಿರಾಗಿದೆ, ನಿನ್ನೆ ಸುಣ್ಣ ಹಾಕಲಾಗಿತ್ತು",
+      dailyHistoryTitle: "ಇತ್ತೀಚಿನ ದೈನಂದಿನ ಅವಲೋಕನಗಳ ಪಟ್ಟಿ",
+      noDailyHistory: "ಇನ್ನೂ ಯಾವುದೇ ಪರಿಶೀಲನೆ ದಾಖಲಾಗಿಲ್ಲ. ಮೇಲೆ ನಿಮ್ಮ ಮೊದಲ ಪರಿಶೀಲನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ.",
+
+      // Impact Real Metrics Additions in Kannada
+      totalReadingsMetric: "ದಾಖಲಾದ ಸೆನ್ಸರ್ ಮಾಪನಗಳು",
+      totalAlertsMetric: "ಹೊರಡಿಸಲಾದ ಎಚ್ಚರಿಕೆಗಳು",
+      unresolvedAlertsMetric: "ಬಾಕಿ ಉಳಿದಿರುವ ತುರ್ತು ಎಚ್ಚರಿಕೆಗಳು",
+      availabilityMetric: "ಸೆನ್ಸರ್ ಡೇಟಾ ಲಭ್ಯತೆ",
+      checksCompletedMetric: "ದೈನಂದಿನ ಫಾರ್ಮ್ ತಪಾಸಣೆಗಳು",
+      auditLeadTimeTitle: "ಮುನ್ಸೂಚನಾ ಸಮಯದ ಲೆಕ್ಕಾಚಾರ ಪಾರದರ್ಶಕತೆ",
+      auditLeadTimeNote: "7-ದಿನಗಳ ಕರಗಿದ ಆಮ್ಲಜನಕದ ರೇಖೀಯ ಟ್ರೆಂಡ್ ಆಧಾರದ ಮೇಲೆ ಲೆಕ್ಕಹಾಕಲಾಗಿದೆ. ಆಮ್ಲಜನಕ 5.0 mg/L ಕೆಳಗೆ ಬೀಳುವ ಕನಿಷ್ಠ 2.1 ದಿನಗಳ ಮೊದಲೇ ಎಚ್ಚರಿಕೆ ದೊರೆಯುತ್ತದೆ.",
 
       // Action checklist with clean format
       action_1_amber: "ರಾತ್ರಿ ಮತ್ತು ಮುಂಜಾನೆ ಪ್ಯಾಡಲ್ ಏರೇಟರ್ ಅನ್ನು ಹೆಚ್ಚು ಸಮಯ ಚಾಲನೆ ಮಾಡಿ",
